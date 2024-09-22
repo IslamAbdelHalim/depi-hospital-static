@@ -1,0 +1,118 @@
+:root {
+  --main-color: #37B7C4;
+  --second-color: #09A5B0;
+  --button-color: #41B3A2;
+  --trans-color: #09A5B0;
+  --green-color: #0D7C66;
+  --background-color: #088395;
+  --text-color: #fff;
+}
+
+/*Global*/
+.link-icons {
+  color: var(--background-color);
+}
+
+
+body {
+  font-family: "Cairo", system-ui;
+}
+
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* make header likes */
+.links {
+  background-color: #eee;
+  padding: 10px 0;
+  height: 55px;
+}
+
+.links ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.links .list-item {
+  margin-right: 7px;
+}
+
+.links .list-item:nth-child(3){
+  padding-right: 10px;
+  border-right: 1px solid var(--second-color);
+}
+
+.links .list-item:last-child {
+  margin-left: 2px;
+}
+
+.links .list-item:last-child .link-icons {
+  margin-right: 5px;
+}
+
+.links .list-item a {
+  color: var(--main-color);
+}
+
+
+
+.links .auth button {
+  background-color: var(--second-color);
+  color: white;
+  margin-right: 7px;
+}
+
+/* Second part of header */
+
+.phone a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.phone a:hover {
+  color: var(--second-color);
+}
+
+#logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo h3 {
+  color: #088395;
+}
+/*Create Nav bar*/
+nav {
+  /* background-color: var(--main-color); */
+  background-color: var(--background-color)
+}
+
+button.book {
+  background-color: var(--button-color); /*or button*/
+  color: white;
+}
+
+button.book:hover {
+  color: white
+}
+
+button.book img {
+  width: 30px;
+  height: 30px;
+}
+
+/*search and ask about this*/
+.nav-link.active {
+  background-color: var(--button-color);
+  border-radius: 3px;
+}
