@@ -16,7 +16,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="fixed-top">
+  <!-- Header section -->
+  <header>
 
     <!-- First Header-->
     <div class="links">
@@ -39,7 +40,7 @@
     </div>
   
     <!-- Second header logo -->
-    <div class="head2 py-4">
+    <div class="head2 py-4 bg-light">
       <div class="container">
         <div class="d-flex align-items-center justify-content-between">
           <div class="phone">
@@ -71,15 +72,20 @@
           <i class="fa-solid fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto h-100" dir="rtl">
+          <ul class="navbar-nav ms-auto h-100 p-0" dir="rtl">
             <li class="nav-item">
               <a href="#" class="nav-link active">الرئيسية</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">من نحن</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">خدماتنا</a>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><span>خدماتنا</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">معمل</a></li>
+                <li><a href="#" class="dropdown-item">اقسامنا</a></li>
+                <li><a href="#" class="dropdown-item">عملائنا</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">اطبائنا</a>
@@ -91,13 +97,67 @@
         </div>
       </div>
     </nav>
-
-
   </header>
 
+  <!-- Landing and sliding section -->
+  <section class="landing position-relative mb-5">
+    <div class="overlay position-absolute w-100"></div>
+    <div class="carousel slide" id="slider" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/hospital1.jpg" alt="" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/hospital2.jpg" alt="" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/hospital3.jpg" alt="" class="d-block w-100">
+        </div>
+      </div>
+      <!-- button for slide -->
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> -->
 
+      <!-- carousel indicator -->
+      <div class="carousel-indicator my-3 d-block w-100 text-center">
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="indicator active" aria-label="slide 1"></button>
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="1" class="indicator" aria-label="slide 2"></button>
+        <button type="button" data-bs-target="#slider" data-bs-slide-to="2" class="indicator" aria-label="slide 3"></button>
+      </div>
+    </div>
+    <div class="better-life position-absolute">
+      <div class="text text-end">
+        <h2> <span class="text-success">حياة</span> افضل</h2>
+        <p class="h5">صحتك أمانتنا. نقدم لك رعاية صحية شاملة ومتكاملة، بدءًا من التشخيص الدقيق وحتى العلاج المتخصص. صحتك هدفنا الأول نقدم لك رعاية صحية عالية الجودة بفضل كادرنا الطبي المتميز وخبرته الواسعة</p>
+      </div>
+      <button type="button" class="btn book rounded-pill">
+        احجز موعدك
+        <img src="./images/LOGO.png" alt="">
+      </button>
+    </div>
+  </section>
 
+<section class="who-us">
+  <div class="container">
+    <div class="d-flex flex-column-reverse flex-xl-row align-items-center  justify-content-xl-between">
+      <div class="image">
+        <img class="w-md-50" src="images/hospital3.jpg" alt="">
+      </div>
+      <div class="text" dir="rtl">
+        <span class="h5 d-block mb-5">مرحبًا بكم في مستشفى DEPI</span>
+        <p class="fw-semi-bold">مستشفـــــــــى DEPI هـــو أكبــــــر صـــرح طبــــي معتمـــد فــي القاهرة .المستشفــــــى حاصــــل علــى شهــادة الاعتماد المصري GAHAR من الهيئة العامة للاعتماد والرقابة الصحية في مصر وحاصل على شهادة الأيزو 22000 للمرة الثالثة على التوالي والتي تهدف لتقديم غذاء آمن للمرضى والزائرين.يتوفر بمستشفــــى DEPI كافة التخصصات الطبية للحصول على أفضل رعاية صحية باستخدام أحدث الأجهزة التشخيصية والعلاجية بطاقة استيعابية تصــل إلى 300 سرير.يوجد بالمستشفى 8 غــرف عمليات مما يسمح بإجراء الكثيـــر من العمليات في آن واحد، تم تصميم غرف العمليات بنظام الكبسولة ويُعَد هذا النظام أعلى نظام عالمي لمكافحة العدوى، بالإضافة إلى تجهيز قسم العمليات بأحدث أجهزة المناظير الجراحية والميكروسكوبية في كافة التخصصات الطبية مثل الجراحة العامة، جراحة المخ والأعصاب، جراحات الأوعية الدموية، جراحة العيون، جراحات الأنف والأذن والحنجرة، جراحات النساء والتوليد، جراحة الوجه والفكين وجراحات العظام.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+  <script src="js/depi.home.js"></script>
   <script src="js/all.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
