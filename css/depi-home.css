@@ -92,7 +92,7 @@ a {
   color: #088395;
 }
 /*Create Nav bar*/
-nav {
+header nav {
   /* background-color: var(--main-color); */
   background-color: var(--background-color)
 }
@@ -203,4 +203,95 @@ section.landing img {
   border-radius: 10px 10px 220px 10px;
   border: 1px solid var(--button-color);
   box-shadow: 14px 8px 4px 0 var(--trans-color);
+}
+
+.who-us .numbers .content {
+  background-color: var(--background-color);
+  width: 170px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.who-us .numbers .content .fa-user-nurse, 
+.fa-hospital,
+.fa-user-doctor,
+.fa-bed {
+  width: 50px;
+  height: 50px;
+}
+
+.medical-part .sections .card {
+  background-color: #37b7c41c;
+  color: var(--second-color);
+}
+
+.medical-part .sections nav {
+  color: var(--green-color);
+}
+
+.doctors {
+  background-color: #09a5b02b;
+}
+
+.doctors .card {
+  background-color: #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  height: 300px;
+}
+
+.doctors .card img {
+  width: 100%;
+  height: 202px;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.4s ease-in-out;
+  object-fit: cover;
+}
+
+.doctors .card:hover img{
+  transform: translateY(-20px);
+}
+
+.doctors .card .card-body {
+  transform: translateY(15px);
+  transition: transform 0.4s ease-in-out;
+}
+
+.doctors .card .social {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity, transform 0.4s ease-in-out;
+  display: none;
+}
+
+.doctors .card .social ul{
+  padding-left: 0 !important;
+}
+
+.doctors .card:hover .social{
+  opacity: 1;
+  transform: translateY(-5px);
+  display: block;
+}
+.doctors .card:hover .card-body{
+  transform: translateY(-25px);
+}
+
+.doctors .card .social ul .fa-facebook,
+.doctors .card .social ul .fa-telegram,
+.doctors .card .social ul .fa-instagram {
+  color: #088395;
+  width: 30px;
+  height: 30px;
+}
+
+.testimonila {
+  width: 700px;
+  background-color: var(--background-color);
+  color: white;
 }
