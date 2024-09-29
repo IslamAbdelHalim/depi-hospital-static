@@ -149,7 +149,7 @@ section.landing img {
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.indicator.active {
+.indicator.active, .isactive {
   background-color: var(--button-color);
 }
 
@@ -233,7 +233,7 @@ section.landing img {
   color: var(--green-color);
 }
 
-.doctors {
+.doctors, .partners{
   background-color: #09a5b02b;
 }
 
@@ -294,4 +294,42 @@ section.landing img {
   width: 700px;
   background-color: var(--background-color);
   color: white;
+}
+
+.componies {
+  background-color: white;
+  overflow: hidden;
+
+}
+
+.componies .carousel-wrapper img {
+  width: 185px;
+  height: 140px;
+}
+
+footer .part-one {
+  background-color: #088395;
+}
+
+footer li.active {
+  color: var(--button-color);
+}
+
+footer li a {
+  color: #eee;
+  text-decoration: none;
+}
+
+footer li a:hover {
+  color: var(--button-color);
+}
+
+.footer-icon {
+  color: var(--second-color);
+  margin-left: 5px;
+}
+
+.copyRight {
+  background-color: var(--green-color);
+  padding: 10px;
 }

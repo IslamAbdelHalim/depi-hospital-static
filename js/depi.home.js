@@ -26,3 +26,30 @@ carousel.addEventListener('slide.bs.carousel', function (event) {
   indicators[event.to].classList.add('active');
 });
 
+
+
+
+
+const companiesPagination = document.querySelectorAll('.paginationCompanies .carousel-indicator button');
+
+
+companiesPagination.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    companiesPagination.forEach((btn) => {
+      btn.classList.remove('isactive');
+    });
+    btn.classList.add('isactive');
+  });
+});
+
+
+const lis = document.querySelectorAll('footer ul li');
+
+lis.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    lis.forEach((li) => {
+      li.classList.remove('active');
+    });
+    btn.classList.add('active');
+  });
+});
