@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEPI-HOSPITAL</title>
+
+    <!-- file style -->
+    <link rel="stylesheet" href="css/depi-home.css">
+    <!-- bootstrap style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+
+        <!-- First Header-->
+        <div class="links">
+            <div class="container">
+                <div class="firstHeader d-flex align-items-center justify-content-between">
+                    <ul>
+                        <li class="list-item"><a href="https://youtube.com" target="_blank"><i
+                                    class="link-icons fa-brands fa-youtube"></i></a></li>
+                        <li class="list-item"><a href="https://instgram.com" target="_blank"><i
+                                    class="link-icons fa-brands fa-instagram"></i></a></li>
+                        <li class="list-item"><a href="https://facebook.com" target="_blank"><i
+                                    class="link-icons fa-brands fa-facebook"></i></a></li>
+                        <li class="list-item"><a href="mailto: hospital@depihospital.com" target="_blank"><i
+                                    class="link-icons fa-regular fa-envelope"></i> hospital@depihospital.com</a></li>
+                    </ul>
+
+                    <div class="auth">
+                        <button type="button" class="btn rounded-pill btn-sm">Login</button>
+                        <button type="button" class="btn rounded-pill btn-sm">Sign Up</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Second header logo -->
+        <div class="head2 py-4 bg-light">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="phone">
+                        <a class="h1 link-icons" href="tel:+19999"><i
+                                class="m-2 link-icons fa-solid fa-phone"></i><span>19999</span></a>
+                    </div>
+                    <div class="logo d-flex align-items-center">
+                        <div id="logo"><img class="me-2" src="./images/LOGO.png" alt="LOGO"></div>
+                        <h3 class="text-uppercase">depi hospital</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button type="button" class="book btn rounded-pill">
+                    احجز موعدك
+                    <img src="./images/LOGO.png" alt="">
+                </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto h-100 p-0" dir="rtl">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">من نحن</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown"><span>خدماتنا</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">معمل</a></li>
+                                <li><a href="#" class="dropdown-item">اقسامنا</a></li>
+                                <li><a href="#" class="dropdown-item">عملائنا</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">اطبائنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">للمرضى</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container" style="direction:rtl;">
+        <div class="row">
+            <div class="col text-center mt-5">
+                <h2>
+                    استفسارات المرضى
+                </h2>
+                <img src="images/LOGO.png" style="width: 70px; height: 70px; ">
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-6" style="direction:rtl;">
+                <form>
+                <label for="inputusername" class="form-label">  اسم المستخدم  </label>
+                <input type="text" id="inputusername" class="form-control" aria-describedby="passwordHelpBlock"
+                    placeholder="ادخل اسم المريض اذا سبق التسحيل" required>
+                <div id="passwordHelpBlock" class="form-text">
+                    <p> ليس لديك اسم مستخدم <a href="#">سجل الان </a></p>
+
+
+                </div>
+                <div class="mb-3 mt-3 ">
+                    <label for="exampleFormControlInput1" class="form-label">الايميل
+                    </label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com"required>
+                </div>  
+
+                 <div class="mb-3 mt-3 ">
+                    <label for="inputcati2" class="form-label">عن اى قسم تريد الاسفسار </label>
+                    <select class="form-select" id="inputcati" aria-label="Default select example">
+                        <option selected>قسم الجلديه </option>
+                        <option value="1">قسم الباطنه</option>
+                        <option value="2">قسم الرمد</option>
+                        <option value="3">قسم الاطفال</option>
+                    </select>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="inputcati3" class="form-label">اذا كان استفسارك عن نتيجة تحاليل فبرجاء ادخل رقم الهاتف
+                        المسجل لدى المعمل
+                    </label>
+                    <input type="text" id="inputcati3" class="form-control" aria-describedby="passwordHelpBlock"
+                        placeholder="ادخل رقم الهاتف">
+                    <div id="passwordHelpBlock" class="form-text">
+                        <p> سيتواصل معك المعمل فى اقرب وقت لتبليغك بنتيجة التحاليل </p>
+
+
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="inputcati4" class="form-label">اذا كان استفسارك عن نتيجة اشعة فبرجاء ادخل رقم الهاتف
+                        المسجل لدى مركز الاشعة
+                    </label>
+                    <input type="text" id="inputcati4" class="form-control" aria-describedby="passwordHelpBlock"
+                        placeholder="ادخل رقم الهاتف">
+                    <div id="passwordHelpBlock" class="form-text">
+                        <p> سيتواصل معك مركز الاشعة فى اقرب وقت لتبليغك بنتيجة الاشعة </p>
+                
+                
+                    </div>
+
+
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">يسعدنا تلقى استفساراتك فى اى وقت اذا
+                        كان
+                        لديك استفسار اخر لا تتردد فى ترك استفساراتك</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div>
+                     <button type="button" class="btn btn-info">ارسل استفسارك</button>
+                </div>
+
+
+            </div>
+
+
+
+
+            </div>
+        </form>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    </div>
+
+    <footer dir="rtl" class="text-light">
+        <div class="part-one py-4">
+            <div class="container">
+                <div class="above grid justify-content-between align-items-self-start">
+
+                    <div class="row row-cols-2 row-cols-md-3 align-items-self-start gab-3">
+                        <div class="col-2">
+                            <div class="go-to">
+                                <div class="logo d-flex align-items-center">
+                                    <p class="ms-2 h6">DEPI-HOSPITAL</p>
+                                    <img src="./images/LOGO.png" width="70px" height="70px" alt="logo">
+                                </div>
+                                <p style="margin-right: 40px;">إذهب إلى</p>
+                                <ul>
+                                    <li>الرئيسية</li>
+                                    <li class="active">من نحن</li>
+                                    <li>خدماتنا</li>
+                                    <li>أطبائنا</li>
+                                    <li>شركائنا</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="info">
+                                <p>تواصل معنا : </p>
+                                <ul class="px-0">
+                                    <li><a href="#"><i class="footer-icon fa-solid fa-map-location-dot"></i>
+                                            الزمالك - القاهرة - مصر </a></li>
+                                    <li class="my-2"><a href="mailto: hospital@depihospital.com" target="_blank"><i
+                                                class="footer-icon fa-regular fa-envelope"></i>
+                                            hospital@depihospital.com</a></li>
+
+                                    <li><a href="tel: +19999"><i class="footer-icon fa-solid fa-phone"></i> 19999 </a></li>
+                                </ul>
+
+                                <div class="info-social text-center mt-4">
+                                    <i class="fa-brands fa-facebook display-6"></i>
+                                    <i class="fa-brands fa-youtube  display-6 mx-3"></i>
+                                    <i class="fa-brands fa-instagram  display-6"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="subscribe">
+                                <form>
+                                    <label for="subscribe" class="form-label">اشترك معنا ليصلك كل الأخبار</label>
+                                    <input class="form-control" type="email" name="email" id="subscribe"
+                                        placeholder="example@gmail.com" dir="ltr">
+                                    <button type="submit" class="btn btn-success mt-1">اشترك</button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyRight p-3" dir="ltr">
+            <p class="text-center h-50 mb-0">&copy;copyright 2024 | All Rights Resserved By <span
+                    class="text-decoration-underline h5">DEPI-Student</span></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/depi.home.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
