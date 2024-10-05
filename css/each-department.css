@@ -1,7 +1,7 @@
-body {
+/* body {
   direction: rtl;
   text-align: right;
-}
+} */
 
 .nav {
   width: auto;
@@ -24,11 +24,13 @@ body {
   color: aliceblue;
 }
 .head,
-.bottom {
+.bottom,
+.headparagraph {
   direction: rtl;
   text-align: right;
   margin: 5px;
   font-size: 15pt;
+
 }
 .par-title {
   font-weight: bold;
@@ -49,6 +51,8 @@ body {
   padding: 10px;
   padding-right: 10px;
   border-radius: 5px;
+  direction: rtl;
+  text-align: right;
 }
 .otherdepart {
   direction: rtl;
