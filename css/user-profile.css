@@ -1,0 +1,75 @@
+/* body {
+} */
+.nav {
+  width: auto;
+  height: 25px;
+  background-color: rgb(251, 251, 251);
+  direction: rtl;
+  text-align: right;
+  margin: auto;
+  padding: 5px 50px 5px 50px;
+}
+.subnav {
+  width: auto;
+  height: 20px;
+  background-color: rgb(0, 147, 161);
+  direction: rtl;
+  text-align: right;
+  margin: auto;
+  padding: 50px 50px;
+  font-size: 23pt;
+  color: aliceblue;
+}
+
+.accountsection, .passwordsection, .appointmentsection{
+  background-color: rgb(0, 147, 161);
+margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.labele {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.eachlabel {
+  color: white;
+  font-size: 18px;
+margin: 5px ;
+margin-left: 40%;
+padding: 5px;
+}
+.inputuserprofile {
+  background-color: rgb(162, 238, 213);
+  width: 500px;
+  margin: 5px ;
+  margin-left: 10%;
+  padding: 5px;
+  color: #02000c;
+}
+.updatebutton, .resetbutton{
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+}
+.resetbutton{
+    background-color: rgb(162, 238, 213);
+}
+.updatebutton{
+    background-color: rgb(58, 140, 207);
+    color: white;
+    margin-left: 10%;
+}
+.eachappointment{
+    border: 5px solid white;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+}
+.eachappointment:hover{
+  transform: scale(1.02);
+  background-color: rgba(245, 41, 5, 0.2);
+  border-color: rgb(101, 167, 221);
+}
