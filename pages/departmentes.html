@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- file style -->
-  <link rel="stylesheet" href="css/depi-home.css">
-  <link href="css/each-department.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/depi-home.css">
+  <link href="../css/departmentes.css" rel="stylesheet">
+
   <!-- bootstrap style -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/all.min.css">
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +58,7 @@
               class="m-2 link-icons fa-solid fa-phone"></i><span>19999</span></a>
         </div>
         <div class="logo d-flex align-items-center">
-          <div id="logo"><img class="me-2" src="./images/LOGO.png" alt="LOGO"></div>
+          <div id="logo"><img class="me-2" src="../images/LOGO.png" alt="LOGO"></div>
           <h3 class="text-uppercase">depi hospital</h3>
         </div>
       </div>
@@ -68,7 +69,7 @@
     <div class="container">
       <button type="button" class="book btn rounded-pill">
         احجز موعدك
-        <img src="./images/LOGO.png" alt="">
+        <img src="../images/LOGO.png" alt="">
       </button>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -103,48 +104,93 @@
 </header>
 
 <br>
-<div class="head"></div>
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="headparagraph">
-        <h5 class="par-title">الأشعة</h5>
-        <p>يقـــــــدم قســــم الأشعة بمستشـــــــــفى العـــــربى أحدث وأدق خدمات التصوير الطبقي، التقنيات
-          التداخلية الحديثة وأجهزة الأشعة العادية والرقمية لعمل كافة الفحوصات المتخصصـة علي أيدي نخبة من
-          أساتذة الجامعات المصرية</p>
-        <p></p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <img src="images/departments/Radiology.jpg" alt="Radiology">
-    </div>
+<div class="search">
+  <div>
+    <label>البحث من الاقسام</label>
+  </div>
+  <div>
+    <input type="text" placeholder="اسم القسم المراد البحث عنه">
+    <button>بحث</button>
   </div>
 </div>
-</div>
 
-<div class="bottom"></div>
-<div class="container">
-  <div class="row">
-    <div class="bottomparagraph">
-      <p>يقـــــــدم قســــم الأشعة بمستشـــــــــفى العـــــربى أحدث وأدق خدمات التصوير الطبقي، التقنيات
-        التداخلية الحديثة وأجهزة الأشعة العادية والرقمية لعمل كافة الفحوصات المتخصصـة علي أيدي نخبة من أساتذة
-        الجامعات المصرية</p>
-      <p></p>
-      <p>الوحدات :</p>
-      <ul>
-        <li>وحدة الأشعة العادية x-ray</li>
-        <li> وحدة الرنين المغناطيسي</li>
-        <li> وحدة الأشعة المقطعية</li>
-        <li> وحدة الأشعة بانوراما</li>
-        <li> وحدة الموجات فوق الصوتية</li>
-        <li>وحدة قياس هشاشة العظام</li>
-      </ul>
-      <p></p>
-      <ul>
-
-      </ul>
+<div class="cards">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="outsidecard">
+          <a href="/department/labb">
+            <div class="card">
+              <img src="../images/departments/lab.jpg" class="card-img-top" alt="lab">
+              <div class="card-body">
+                <h5 class="card-title">المعمل</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="outsidecard">
+          <a href="/department/radiology">
+            <div class="card">
+              <img src="../images/departments/Radiology.jpg" class="card-img-top" alt="Radiology">
+              <div class="card-body">
+                <h5 class="card-title">الأشعة</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="outsidecard">
+          <a href="/department/bloodbank">
+            <div class="card">
+              <img src="../images/departments/BloodBank.jpg" class="card-img-top" alt="Blood Bank">
+              <div class="card-body">
+                <h5 class="card-title">بنك الدم</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="outsidecard">
+          <a href="/department/Pharmacy">
+            <div class="card">
+              <img src="../images/departments/Pharmacy.jpg" class="card-img-top" alt="Pharmacy">
+              <div class="card-body">
+                <h5 class="card-title">الصيدلية</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="outsidecard">
+          <a href="/department/infectioncontrol">
+            <div class="card">
+              <img src="../images/departments/InfectionControl.jpg" class="card-img-top" alt="Infection Control">
+              <div class="card-body">
+                <h5 class="card-title">مكافحة العدوى</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="outsidecard">
+          <a href="/department/comprehensiveexamination">
+            <div class="card">
+              <img src="../images/departments/ComprehensiveExamination.jpg" class="card-img-top"
+                alt="comprehensiveexamination">
+              <div class="card-body">
+                <h5 class="card-title">الفحص الشامل</h5>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-
   </div>
 </div>
 <br>
@@ -159,7 +205,7 @@
             <div class="go-to">
               <div class="logo d-flex align-items-center">
                 <p class="ms-2 h6">DEPI-HOSPITAL</p>
-                <img src="./images/LOGO.png" width="70px" height="70px" alt="logo">
+                <img src="../images/LOGO.png" width="70px" height="70px" alt="logo">
               </div>
               <p style="margin-right: 40px;">إذهب إلى</p>
               <ul>
@@ -212,9 +258,10 @@
   </div>
 </footer>
 
-<script src="js/depi.home.js"></script>
-<script src="js/all.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="../js/depi.home.js"></script>
+<script src="../js/all.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
